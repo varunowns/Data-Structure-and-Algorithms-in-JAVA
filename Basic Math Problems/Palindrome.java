@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Reverse_Number {
+public class Palindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,7 +15,11 @@ public class Reverse_Number {
             revNum = (revNum*10) + lastDigit;
             num = num/10;
         }
-        System.out.println("Reverse of "+orgNUm+ " is : "+revNum);
+        if(revNum == orgNUm){
+            System.out.println("true");
+        } else{
+            System.out.println("false");
+        }
         sc.close();
     }
 }
