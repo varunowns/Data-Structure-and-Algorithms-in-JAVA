@@ -14,5 +14,6 @@ public class Count_Digits {
             num = num/10;
         }
         System.out.println("Number of digits in "+orgNUm+" are : "+ctr+".");
+        sc.close();
     }
 }
