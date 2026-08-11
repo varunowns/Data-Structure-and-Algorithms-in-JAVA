@@ -1,5 +1,11 @@
 import java.util.*;
 
+//     *    
+//    ***   
+//   *****  
+//  ******* 
+// *********
+
 public class Pattern7 {
     static void print7(int n){
         for(int i=1; i<=n; i++){
