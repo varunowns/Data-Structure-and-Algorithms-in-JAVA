@@ -2,6 +2,9 @@ package Recursion;
 
 import java.util.Scanner;
 
+// Print Linearly from 1 to N using Back Tracking
+
+
 public class backtrackingPrintLinearly {
     static void printing(int n){
         if (n<1) {
