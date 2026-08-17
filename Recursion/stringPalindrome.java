@@ -7,7 +7,7 @@ public class stringPalindrome {
         if (i>=n/2) {
             return true;
         }
-        if (str.charAt(i)!=str.charAt(n-i-1)) {
+        if (str.charAt(i)!=str.charAt(n-i-1)) { // COndition to check Palindrome
             return false;   
         }
         return isPalindrome(str, i+1, n);
@@ -17,7 +17,7 @@ public class stringPalindrome {
 
         System.out.print("Enter a String : ");
         String str = sc.nextLine();
-        int n = str.length();
+        int n = str.length(); // n is length of string
         if (isPalindrome(str, 0, n) == true) {
             System.out.println("Strign is Palindrome.");
         } else{
