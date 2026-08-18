@@ -2,6 +2,8 @@ package Recursion;
 
 import java.util.*;
 
+// to print all the Subsequences of an Array
+
 public class subsequences {
     static void printSubsequences(int arr[], int index, ArrayList<Integer> list){
         if (index >= arr.length) {
