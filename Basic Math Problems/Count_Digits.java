@@ -9,11 +9,10 @@ public class Count_Digits {
         int orgNUm = num;
         int ctr = 0;
         while(num>0){
-            int lastDigit = num%10;
             ctr++;
             num = num/10;
         }
-        System.out.println("Number of digits in "+orgNUm+" are : "+ctr+".");
+        System.out.println("Number of digits in "+orgNUm+" are : "+ctr);
         sc.close();
     }
 }
