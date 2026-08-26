@@ -1,9 +1,9 @@
 import java.util.Scanner;
-
-public class SearchRotatedArray {
+// Search in Rotated Sorted Array which have "Unique ELements".
+public class searchRotatedArrayI {
     static int search(int nums[], int target){
 
-        int low = 0, high = nums.length, mid;
+        int low = 0, high = nums.length - 1, mid;
 
         while (low<=high) {
             mid = (low + high)/2;
@@ -32,7 +32,7 @@ public class SearchRotatedArray {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter element : ");
+        System.out.print("Enter element : ");
         int target = sc.nextInt();
         
         int[] nums = {7,8,9,1,2,3,4,5,6};
