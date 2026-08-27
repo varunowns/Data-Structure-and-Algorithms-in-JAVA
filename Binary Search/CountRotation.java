@@ -25,8 +25,8 @@ public class CountRotation {
     }
     public static void main(String[] args) {
         int nums[] = {4,5,6,7,0,1,2};
-        int result = count(nums);
+        int index = count(nums);
 
-        System.out.println("Total times Array Rotated : " + result);
+        System.out.println("Total times Array Rotated : " + index);
     }
 }
