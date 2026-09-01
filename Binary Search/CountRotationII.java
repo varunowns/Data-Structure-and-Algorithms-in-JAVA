@@ -1,4 +1,5 @@
 public class CountRotationII {
+    //Duplicate Elements
     static int count(int[] nums) {
         int low = 0 , high = nums.length - 1, mid;
         int result = Integer.MAX_VALUE;
