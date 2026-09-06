@@ -1,8 +1,8 @@
 public class Book_Allocation{
-    static int minNums(int nums[]){
+    static int maxNums(int nums[]){
         int low = nums[0];
         for (int i : nums) {
-            low = Math.min(i, low);
+            low = Math.max(i, low);
         }
         return low;
     }
@@ -28,8 +28,8 @@ public class Book_Allocation{
         return stdCtr;
     }
 
-    public int splitArray(int[] nums, int k) {
-        int low = minNums(nums);
+    public static  int splitArray(int[] nums, int k) {
+        int low = maxNums(nums);
         int high = sumNums(nums);
         int mid, ans = high;
         int n = nums.length;
@@ -51,6 +51,8 @@ public class Book_Allocation{
         return ans;
     }
     public static void main(String[] args) {
-        int nums[] = {24,46,28,49,}
+        int nums[] = {25,46,28,49,24};
+        int k = 4;
+        System.out.println(splitArray(nums, k));
     }
 }
