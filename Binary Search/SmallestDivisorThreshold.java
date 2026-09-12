@@ -20,14 +20,12 @@ public class SmallestDivisorThreshold {
         while (low<=high) {
             mid = (low + high)/2;
             if(divisor(nums, mid) <= threshold){
-                return mid;
-            } else if (divisor(nums, mid) > threshold) {
-                low = mid + 1;
-            } else {
                 high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-        return -1;
+        return low;
     }
     public static void main(String[] args) {
         int nums[] = {1,2,5,9};
