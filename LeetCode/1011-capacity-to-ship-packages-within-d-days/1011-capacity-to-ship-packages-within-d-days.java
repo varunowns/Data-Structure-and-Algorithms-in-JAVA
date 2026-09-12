@@ -27,7 +27,7 @@ class Solution {
     }
     public int shipWithinDays(int[] weights, int days) {
         int low = maxWeights(weights), high = sumWeights(weights), mid;
-        int ans = low;
+        
         while (low<=high) {
             mid = (low + high)/2;
             if (daysRequired(weights, mid) > days) {
@@ -35,9 +35,8 @@ class Solution {
             }
             else {
                 high = mid - 1;
-                ans = mid;
             }
         }
-        return ans;
+        return low;
     }
 }
