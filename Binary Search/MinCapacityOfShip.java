@@ -27,7 +27,7 @@ public class MinCapacityOfShip {
     }
     static int mincapacity(int nums[], int days){
         int low = maxNums(nums), high = sumNums(nums), mid;
-        int ans = low;
+
         while (low<=high) {
             mid = (low + high)/2;
             if (daysRequired(nums, mid) > days) {
@@ -35,10 +35,9 @@ public class MinCapacityOfShip {
             }
             else {
                 high = mid - 1;
-                ans = mid;
             }
         }
-        return ans;
+        return low;
     }
     public static void main(String[] args) {
         int nums[] = {1,2,3,4,5,6,7,8,9,10};
