@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class RowWithMaximumOnes {
-    static int search(int nums[], int target){
+    static int lowerBound(int nums[], int target){
 
         int low = 0, high = nums.length - 1, mid, result = nums.length;
 
@@ -24,7 +24,7 @@ public class RowWithMaximumOnes {
         int cnt_ones;
         for(int i = 0; i < mat.length; i++){
             Arrays.sort(mat[i]);
-            cnt_ones = mat[i].length - search(mat[i], 1);
+            cnt_ones = mat[i].length - lowerBound(mat[i], 1);
 
             if(cnt_ones > cnt_max){
                 cnt_max = cnt_ones;
