@@ -1,5 +1,6 @@
-import java.util.*;
-class Solution {
+import java.util.Arrays;
+
+public class RowWithMaximumOnes {
     static int search(int nums[], int target){
 
         int low = 0, high = nums.length - 1, mid, result = nums.length;
@@ -17,7 +18,7 @@ class Solution {
         return result;
     }
 
-    public int[] rowAndMaximumOnes(int[][] mat) {
+    static int[] rowAndMaximumOnes(int[][] mat) {
         int cnt_max = 0;
         int index = 0;
         int cnt_ones;
@@ -32,5 +33,18 @@ class Solution {
         }
         int arr[] = {index,cnt_max};
         return arr;
+    }
+    public static void main(String[] args) {
+        int[][] mat = {
+        {0, 1, 1},
+        {1, 0, 0},
+        {1, 1, 1}
+        };
+
+        int[] result = rowAndMaximumOnes(mat);
+
+        System.out.println("Row index: " + result[0]);
+        System.out.println("Maximum ones: " + result[1]);
+
     }
 }
