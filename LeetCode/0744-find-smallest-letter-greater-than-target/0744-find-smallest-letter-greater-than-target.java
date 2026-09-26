@@ -2,8 +2,7 @@ class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
         int n = letters.length;
         
-        if(target<letters[0]) return letters[0];
-        if(target>=letters[n-1]) return letters[0];
+        if(target<letters[0] || target>=letters[n-1]) return letters[0];
 
         int low = 1, high = n-2, mid;
 
