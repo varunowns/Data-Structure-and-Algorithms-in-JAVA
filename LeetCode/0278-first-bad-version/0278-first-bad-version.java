@@ -7,7 +7,7 @@ public class Solution extends VersionControl {
         while(low<=high){
             mid = low + (high - low)/2;
             if(isBadVersion(mid) == true){
-                result = mid;
+                // result = mid;
                 high = mid-1;
             } else {
                 low = mid + 1;
