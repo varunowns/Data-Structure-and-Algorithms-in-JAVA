@@ -23,6 +23,10 @@ public class lowerCase_charachter_hashing {
             if (ch == '0') {
                 break;
             }
+            if (ch < 'a' || ch > 'z') {
+                System.out.println("Please enter a lowercase letter (a-z).");
+                continue;
+            }
             System.out.println("Total times " + ch + " appeared in string: " + hashTable[ch - 'a']);
         }
 
